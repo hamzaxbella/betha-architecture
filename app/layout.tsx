@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/Navbar";
+import BlurTransition from "@/components/BlurTransition";
+import Smoothscroll from "@/lib/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="min-h-screen">
+        <Smoothscroll>
+          <div className="relative">
+            <BlurTransition />
+            <header className="sticky top-0 z-50 bg-white rounded-b-xl">
+              <Navbar />
+            </header>
+            {children}
+          </div>
+        </Smoothscroll>
       </body>
     </html>
   );
