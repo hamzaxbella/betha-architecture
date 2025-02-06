@@ -1,7 +1,14 @@
+import AboutTemplate from "@/components/Templates/AboutTemplate"
+import { getAboutContent } from "@/services/AboutService"
 
-const page = () => {
+const page = async () => {
+
+  const aboutData = await getAboutContent()
+  
   return (
-    <div>page</div>
+    <section className="max-container ">
+      <AboutTemplate data={aboutData} />
+    </section>
   )
 }
 

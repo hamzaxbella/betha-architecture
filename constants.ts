@@ -49,3 +49,31 @@ export const contactButtonTranslation = {
     ar: "تواصل معنا",
     fr: "Contactez-nous"
 }
+
+export const aboutContentTranslation = {
+    about : {
+        en : 'about',
+        ar : 'عنا',
+        fr : 'à propos'
+    },
+    philosophy : {
+        en : 'philosophy',
+        fr : 'philosophy',
+        ar : 'فلسفتنا'
+    },
+    studio : {
+        en : 'studio',
+        fr : 'studio',
+        ar : 'استديو'
+    },
+    profile : {
+        en : 'profile',
+        fr : 'profile',
+        ar : 'الملف الشخصي'
+    },
+    awards : {
+        en : 'awards',
+        fr : 'awards',
+        ar : 'الجوائز'
+    }
+}

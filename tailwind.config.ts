@@ -17,6 +17,7 @@ export default {
       "3xl": ["28px", "50px"],
       "4xl": ["38px", "48px"],
       "6xl": ["58px", "88px"],
+      "7xl": ["77px", "95px"],
       "8xl": ["96px", "106px"],
     },
 
