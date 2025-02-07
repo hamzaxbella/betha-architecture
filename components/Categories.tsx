@@ -9,7 +9,7 @@ const Categories = ({categories} : CategoriesPRops) => {
   const {selectedFilter , setSelectedFilter} = useFilter()
   
   return (
-    <div className="flex justify-center gap-4 overflow-x-auto">
+    <div className="flex justify-center gap-4 overflow-x-auto flex-wrap">
         <div className={``} >
           <button onClick={() => setSelectedFilter('all')} className={`${font} text-md lg:text-lg font-light border rounded-full py-2 lg:py-4 px-10 whitespace-nowrap  hover:bg-slate-100 ${selectedFilter === 'all' && 'bg-black text-white hover:!bg-black'}`}>{AllTranslation[langauge]}</button>
         </div>

@@ -18,6 +18,10 @@
         margin: 0 auto;
         padding: 0 1rem;
     }
+
+    .custom-height { 
+        height: calc(100vh - 60px);
+    }
 }
 
 @layer utilities {

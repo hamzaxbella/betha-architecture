@@ -247,7 +247,7 @@ const ProjectsList = ({homeList , projects}  : ProjectsListProps) => {
       )}
       <div className="flex justify-center my-6">
 
-      <button onClick={() => loadMoreProjects()} className={`!${font} text-lg rounded-full py-4 border font-inter font-light px-10 hover:bg-slate-100`} >{LoadMoreTranslation[langauge]}</button>
+      <button onClick={() => loadMoreProjects()} className={`!${font} ${!homeList && 'hidden' } text-lg rounded-full py-4 border font-inter font-light px-10 hover:bg-slate-100`} >{LoadMoreTranslation[langauge]}</button>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import BlurTransition from "@/components/BlurTransition";
 import Smoothscroll from "@/lib/SmoothScroll";
 
@@ -20,9 +20,7 @@ export default function RootLayout({
         <Smoothscroll>
           <div className="relative">
             <BlurTransition />
-            <header className="sticky top-0 z-50 bg-white rounded-b-xl">
-              <Navbar />
-            </header>
+            <Header />
             {children}
           </div>
         </Smoothscroll>

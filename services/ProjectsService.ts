@@ -31,3 +31,23 @@ export const getProjects = async () => {
 
     return client.fetch(query)
 }
+
+export const getProject = async (slug : string) => {
+    const query = 
+    `
+    *[_type == 'project' && slug.current == '${slug}'] {
+        title, 
+        description,
+        location,
+        budjet,
+        'currentSlug' : slug.current,
+        area,
+        client, 
+        _createdAt,
+        "thumbnail" : image.asset,
+        images,
+        "category" : category->slug.current
+    } `
+
+    return client.fetch(query)
+}
