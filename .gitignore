@@ -36,6 +36,8 @@ yarn-error.log*
 # vercel
 .vercel
 
+# sanity
+./betha-studio
 # typescript
 *.tsbuildinfo
 next-env.d.ts
