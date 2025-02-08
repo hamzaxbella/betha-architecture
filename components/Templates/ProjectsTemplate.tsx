@@ -7,11 +7,17 @@ import ProjectsList from "../ProjectsList";
 import Categories from "../Categories";
 import { AllTranslation } from "@/constants";
 import Footer from "../Footer";
+import { useRouteStore } from "@/hooks/RouteStore";
+import { useEffect } from "react";
 
 const ProjectsTemplate = ({ projects, categories }: HomeTemplateProps) => {
   const { selectedFilter } = useFilter();
   const { langauge } = useLangaugeStore();
+  const { setCurrentRoute} = useRouteStore()
 
+  useEffect(() => {
+    setCurrentRoute('/projects')
+  } , [setCurrentRoute])
   return (
     <section>
       <section className="padding-y">

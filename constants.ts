@@ -77,3 +77,32 @@ export const aboutContentTranslation = {
         ar : 'الجوائز'
     }
 }
+
+
+export const ProjectDetailsTranslations = {
+    location : {
+        en : 'Location',
+        ar : 'موقع',
+        fr : 'Emplacement'
+    },
+    client : {
+        en : 'Client',
+        ar : 'زبون',
+        fr : 'Client'
+    },
+    area : {
+        en : 'Area',
+        ar : 'منطقة',
+        fr : 'Zone'
+    },
+    budget : {
+        en : 'Budget',
+        ar : 'ميزانية',
+        fr : 'Budget'
+    },
+    category : {
+        en : 'Category',
+        ar : 'الفئة',
+        fr : 'Catégorie'
+    },
+}

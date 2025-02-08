@@ -1,13 +1,10 @@
 'use client';
-import { usePathname } from 'next/navigation';
 import Navbar from './Navbar';
 
 const Header = () => {
-  const pathname = usePathname();
-  const isProjectPage = pathname.includes('/projects/');
 
   return (
-    <header className={`${isProjectPage ? 'fixed left-0 top-0 w-full' : 'sticky top-0'} z-50 bg-white`}>
+    <header className="sticky top-0 left-0 right-0 w-full z-[9999] bg-white/95 backdrop-blur-sm">
       <Navbar />
     </header>
   );

@@ -41,7 +41,7 @@ const ProjectsList = ({homeList , projects}  : ProjectsListProps) => {
   useEffect(() => {
     const filtered = selectedFilter === 'all' 
       ? projects 
-      : projects.filter((project) => project.category === selectedFilter);
+      : projects.filter((project) => project.category.toString() === selectedFilter.toString());
     
     setFilteredProjects(filtered);
     setDisplayedProjects(filtered.slice(0, projectsPerPage));

@@ -7,14 +7,18 @@ export type Project = {
     title : {ar : string , fr  : string , en : string},
     description : {ar : string , fr  : string , en : string},
     location : {ar : string , fr  : string , en : string},
-    budjet : number,
-    area : number,
+    budjet : {ar : string , fr  : string , en : string},
+    area :  {ar : string , fr  : string , en : string},
     client : {ar : string , fr  : string , en : string},
     _createdAt : string,
     thumbnail : string,
-    images : string[],
+    images : {
+        asset : {
+            _ref : string
+        }
+    }[],
     currentSlug : string,
-    category : string
+    category : {ar : string , fr  : string , en : string}
 }
 
 export interface CategoriesPRops {

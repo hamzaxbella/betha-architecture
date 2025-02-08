@@ -47,7 +47,7 @@ export const getProject = async (slug : string) => {
         "thumbnail" : image.asset,
         images,
         "category" : category->slug.current
-    } `
+    }[0] `
 
     return client.fetch(query)
 }
